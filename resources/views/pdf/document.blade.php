@@ -126,11 +126,12 @@
             <table>
                 <tr>
                     <td style="width: 50%">
-                        <img src="https://seeklogo.com/images/G/govt-bangladesh-logo-D1143C363F-seeklogo.com.png" height="50px" alt="logo">
+                        
+                        <img src="{{url('/public/images/aams-logo-big.png')}}" alt="Image" height="50px"/>
                     </td>
                     <td>
                         <span style="float: right">
-                            Application Id: {{ $general_info->application_no }}
+                            আবেদন নম্বর: {{ $general_info->application_no }}
                         </span>
                     </td>
 
@@ -148,10 +149,7 @@
             <hr>
 
             <table style="margin: 12px 0px">
-
-
-
-                <tr>
+               <tr>
                     <td style="width: 25%;">
                         <img src="{{ asset('uploads/profile/'.$document->profile) }}" width="120px" height="120px">
                     </td>
@@ -193,6 +191,7 @@
 
             <table>
                 <tr>
+                    
                     <td width="35%">পারিবারিক অবস্থা</td width="35%">
                     <td>{{ $family_info->familystatus->status_name }}</td>
                 </tr>

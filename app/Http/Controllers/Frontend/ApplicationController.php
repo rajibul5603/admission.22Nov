@@ -358,6 +358,7 @@ class ApplicationController extends Controller
 
         $pdf->WriteHTML($this->pdf_html($id));
 
+        $pdf->Output("uploads/applicants_copy/".$file_name, 'F');
         $pdf->Output($file_name, 'D');
     }
 

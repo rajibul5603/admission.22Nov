@@ -601,30 +601,7 @@
                     </ul>
                 </li>
             @endcan
-            @can('employee_management_access')
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa-fw fas fa-sliders-h">
-
-                        </i>
-                        <span>{{ trans('cruds.employeeManagement.title') }}</span>
-                        <span class="pull-right-container"><i class="fa fa-fw fa-angle-left pull-right"></i></span>
-                    </a>
-                    <ul class="treeview-menu">
-                        @can('education_access')
-                            <li class="{{ request()->is("admin/education") || request()->is("admin/education/*") ? "active" : "" }}">
-                                <a href="{{ route("admin.education.index") }}">
-                                    <i class="fa-fw fas fa-graduation-cap">
-
-                                    </i>
-                                    <span>{{ trans('cruds.education.title') }}</span>
-
-                                </a>
-                            </li>
-                        @endcan
-                    </ul>
-                </li>
-            @endcan
+      
             <li class="{{ request()->is("admin/system-calendar") || request()->is("admin/system-calendar/*") ? "active" : "" }}">
                 <a href="{{ route("admin.systemCalendar") }}">
                     <i class="fas fa-fw fa-calendar">
