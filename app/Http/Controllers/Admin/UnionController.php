@@ -40,7 +40,7 @@ class UnionController extends Controller
                 'editGate',
                 'deleteGate',
                 'crudRoutePart',
-                'row'
+                'row' 
             ));
             });
 
