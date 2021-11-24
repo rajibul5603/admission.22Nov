@@ -158,7 +158,7 @@
                         <p>
                         <ul>
                             <li>নাম: {{ $general_info->name }}</li>
-                            <li>জন্ম তারিখ: {{ $general_info->brid }}</li>
+                            <li>জন্ম নিবন্ধন নম্বর: {{ $general_info->brid }}</li>
                             <li>জাতীয় পরিচয়পত্র নম্বর: {{ $general_info->nid }}</li>
                             <li>পিতার নাম: {{ $general_info->father_name }}</li>
                             <li>মাতার নাম: {{ $general_info->mother_name }}</li>
@@ -192,7 +192,7 @@
             <table>
                 <tr>
                     
-                    <td width="35%">পারিবারিক অবস্থা</td width="35%">
+                    <td width="35%">কোটা</td width="35%">
                     <td>{{ $family_info->familystatus->status_name }}</td>
                 </tr>
                 <tr>
@@ -200,20 +200,20 @@
                     <td>{{ $family_info->guardian_occupation->occupation_name }}</td>
                 </tr>
                 <tr>
-                    <td width="35%">অভিভাবকের শিক্ষা</td>
+                    <td width="35%">অভিভাবকের শিক্ষাগত যোগ্যতা</td>
                     <td>{{ $family_info->guardian_education }}</td>
                 </tr>
                 <tr>
                     <td width="35%">অভিভাবকের জমির পরিমাণ</td>
-                    <td>{{ $family_info->guardian_land }}</td>
+                    <td>{{ $family_info->guardian_land }} শতাংশ </td>
                 </tr>
                 <tr>
                     <td width="35%">অভিভাবকের বার্ষিক আয়</td>
-                    <td>{{ $family_info->guardian_annual_income }}</td>
+                    <td>{{ $family_info->guardian_annual_income }} টাকা</td>
                 </tr>
                 <tr>
                     <td width="35%">পরিবারের সদস্য সংখ্যা</td>
-                    <td>{{ $family_info->family_member }}</td>
+                    <td>{{ $family_info->family_member }} জন </td>
                 </tr>
 
             </table>
